@@ -23,6 +23,7 @@ module.exports = {
     plugins: [
         new htmlWebpackPlugin({
             template: path.resolve(__dirname, "index.html"),
+            favicon: path.resolve("src", "assets", "scissors.svg")
         }),
     ],
 };
