@@ -1,4 +1,7 @@
 {
+  "name": "hair-day",
+  "description": "Aplicação Web para agendamento para corte de cabelo.",
+  "author": "BrenonDev",
   "scripts": {
     "server": "json-server --watch server.json --port 3333"
   },
