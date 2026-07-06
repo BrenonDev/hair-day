@@ -41,7 +41,17 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"],
-            }
-        ]
+            },
+            {
+                test: /\.js$/,
+                exclude: /\.noe_module/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["@babel/preset-env"]
+                    },
+                },
+            },
+        ],
     },
 };
