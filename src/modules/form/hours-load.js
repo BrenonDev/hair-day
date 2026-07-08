@@ -14,7 +14,6 @@ export function hoursLoad({ date }) {
         
         // Adiciona a hora na data e verifica se está no passado
         const isHourPast = dayjs(date).add(schedulesHour, "hour").isAfter(dayjs());
-        console.log(schedulesHour, isHourPast);
         
         return {
             hour,
