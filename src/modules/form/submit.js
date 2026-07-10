@@ -42,7 +42,7 @@ form.onsubmit = async (event) => {
         console.log(when);
         
         // Gera um ID
-        const id = new Date().getTime();
+        const id = new Date().getTime().toString();
 
         // Faz o agendamento
         await scheduleNew({id, name, when});
